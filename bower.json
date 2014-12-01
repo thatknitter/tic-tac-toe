@@ -1,0 +1,16 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thatknitter/tic-tac-toe",
+  "authors": [
+    "thatknitter <kblewis.flt@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ]
+}
