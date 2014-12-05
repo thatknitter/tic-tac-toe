@@ -15,15 +15,24 @@
       }
 
       function currentTurn() {
-        if (player1 === true) {
-          $cell.click(drawX);
-          player1 = false;
-          player2 = true;
-        } else if (player2 === true) {
-          $cell.click(drawO);
-          player1 = true;
-          player2 = false;
+        function counter() {
+          count = 0;
+          currentTurn();
+          count = count + 1;
+
+          if (count % 2 === 0) {
+            $cell.click(drawX);
+            player1 = false;
+            player2 = true;
+            counter();
+          } else if (count % 2 === 1) {
+            $cell.click(drawO);
+            player1 = true;
+            player2 = false;
+            counter();
+          }
         }
+
       }
 
       currentTurn();

@@ -1,7 +1,9 @@
 ;(function(){
   'use strict';
 
-  var player1 = true;
-  var player2 = false;
-
+function counter(){
+  count = 0;
+  currentTurn();
+  count = count + 1;
+}
 }());
